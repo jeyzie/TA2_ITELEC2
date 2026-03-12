@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace ProductManagementSystem
@@ -242,3 +243,5 @@ namespace ProductManagementSystem
         }
     }
 }
+
+// galing
