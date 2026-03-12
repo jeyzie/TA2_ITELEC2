@@ -56,35 +56,27 @@ namespace ProductManagementSystem
             this.panelButtons.SuspendLayout();
             this.panelGrid.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtProductName
-            // 
+
             this.txtProductName.Font = new System.Drawing.Font("Arial", 11F);
             this.txtProductName.Location = new System.Drawing.Point(120, 50);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(200, 24);
             this.txtProductName.TabIndex = 1;
-            // 
-            // txtPrice
-            // 
+
             this.txtPrice.Font = new System.Drawing.Font("Arial", 11F);
             this.txtPrice.Location = new System.Drawing.Point(425, 50);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(150, 24);
             this.txtPrice.TabIndex = 3;
             this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
-            // 
-            // txtQuantity
-            // 
+
             this.txtQuantity.Font = new System.Drawing.Font("Arial", 11F);
             this.txtQuantity.Location = new System.Drawing.Point(675, 50);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(150, 24);
             this.txtQuantity.TabIndex = 5;
             this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
-            // 
-            // btnAdd
-            // 
+
             this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -97,9 +89,7 @@ namespace ProductManagementSystem
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnUpdate
-            // 
+
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnUpdate.Enabled = false;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
@@ -113,9 +103,7 @@ namespace ProductManagementSystem
             this.btnUpdate.Text = "UPDATE";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnDelete
-            // 
+ 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.btnDelete.Enabled = false;
             this.btnDelete.FlatAppearance.BorderSize = 0;
@@ -129,9 +117,7 @@ namespace ProductManagementSystem
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnClear
-            // 
+
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -144,9 +130,7 @@ namespace ProductManagementSystem
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnLoad
-            // 
+
             this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.btnLoad.FlatAppearance.BorderSize = 0;
             this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -159,9 +143,7 @@ namespace ProductManagementSystem
             this.btnLoad.Text = "REFRESH";
             this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
-            // dgvProducts
-            // 
+
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -173,48 +155,41 @@ namespace ProductManagementSystem
             this.dgvProducts.Size = new System.Drawing.Size(846, 296);
             this.dgvProducts.TabIndex = 0;
             this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
-            // 
-            // lblProductName
-            // 
+
             this.lblProductName.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblProductName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblProductName.Location = new System.Drawing.Point(20, 50);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(100, 25);
             this.lblProductName.TabIndex = 0;
             this.lblProductName.Text = "Product Name:";
-            // 
-            // lblPrice
-            // 
+
             this.lblPrice.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblPrice.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPrice.Location = new System.Drawing.Point(350, 50);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(70, 25);
             this.lblPrice.TabIndex = 2;
             this.lblPrice.Text = "Price (₱):";
-            // 
-            // lblQuantity
-            // 
+
             this.lblQuantity.Font = new System.Drawing.Font("Arial", 10F);
+            this.lblQuantity.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblQuantity.Location = new System.Drawing.Point(600, 50);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(70, 25);
             this.lblQuantity.TabIndex = 4;
             this.lblQuantity.Text = "Quantity:";
-            // 
-            // lblTitle
-            // 
+
             this.lblTitle.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(250, 20);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(400, 30);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Product Management System";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelInput
-            // 
-            this.panelInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(240)))), ((int)(((byte)(241)))));
+
+            this.panelInput.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panelInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelInput.Controls.Add(this.lblProductName);
             this.panelInput.Controls.Add(this.txtProductName);
@@ -227,9 +202,8 @@ namespace ProductManagementSystem
             this.panelInput.Size = new System.Drawing.Size(850, 120);
             this.panelInput.TabIndex = 1;
             this.panelInput.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInput_Paint);
-            // 
-            // panelButtons
-            // 
+
+            this.panelButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelButtons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelButtons.Controls.Add(this.btnAdd);
             this.panelButtons.Controls.Add(this.btnUpdate);
@@ -241,19 +215,15 @@ namespace ProductManagementSystem
             this.panelButtons.Size = new System.Drawing.Size(576, 50);
             this.panelButtons.TabIndex = 2;
             this.panelButtons.Paint += new System.Windows.Forms.PaintEventHandler(this.panelButtons_Paint);
-            // 
-            // panelGrid
-            // 
+
             this.panelGrid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelGrid.Controls.Add(this.dgvProducts);
             this.panelGrid.Location = new System.Drawing.Point(20, 250);
             this.panelGrid.Name = "panelGrid";
             this.panelGrid.Size = new System.Drawing.Size(850, 300);
             this.panelGrid.TabIndex = 3;
-            // 
-            // Form1
-            // 
-            this.BackColor = System.Drawing.Color.White;
+
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panelInput);
