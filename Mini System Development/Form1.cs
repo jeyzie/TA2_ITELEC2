@@ -259,5 +259,10 @@ namespace ProductManagementSystem
         {
 
         }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
